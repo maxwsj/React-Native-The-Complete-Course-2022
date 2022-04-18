@@ -33,7 +33,7 @@ function GameOverScreen({ roundsNumber, userNumber, onStartNewGame }) {
    return (
       <ScrollView style={styles.screen}>
          <View style={styles.rootContainer}>
-            <Title>GAME OVER!</Title>
+            <Title style={styles.titleMarginTop}>GAME OVER!</Title>
             <View style={[styles.imageContainer, imageStyle]}>
                <Image
                   style={styles.image}
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
       // height: deviceWidth < 380 ? 150 : 300,
       // borderRadius: deviceWidth < 380 ? 75 : 150,
       borderWidth: 3,
-      borderColor: Colors.primary800,
+      borderColor: Colors.tertiary100,
       overflow: 'hidden',
       margin: 36,
    },
@@ -89,6 +89,9 @@ const styles = StyleSheet.create({
    },
    highlight: {
       fontFamily: 'open-sans-bold',
-      color: Colors.primary500,
+      color: Colors.primary700,
+   },
+   titleMarginTop: {
+      marginTop: 30,
    },
 });
